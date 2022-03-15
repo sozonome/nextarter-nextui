@@ -1,5 +1,5 @@
 {
-  "name": "nextarter-base",
+  "name": "nextarter-nextui",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -17,6 +17,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@nextui-org/react": "^1.0.2-beta.4",
     "next": "12.1.0",
     "next-pwa": "^5.4.6",
     "next-seo": "^5.1.0",
