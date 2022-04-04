@@ -3792,10 +3792,10 @@ minimist-options@4.1.0:
     is-plain-obj "^1.1.0"
     kind-of "^6.0.3"
 
-minimist@^1.2.0, minimist@^1.2.5:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
-  integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
+minimist@^1.2.0, minimist@^1.2.5, minimist@^1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
+  integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
 
 modify-values@^1.0.0:
   version "1.0.1"
@@ -3844,18 +3844,18 @@ next-pwa@^5.4.6:
     workbox-webpack-plugin "^6.5.1"
     workbox-window "^6.5.1"
 
-next-seo@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-5.1.0.tgz#aa9fd6249a11bf93e6da06fa2a6bc89268936edf"
-  integrity sha512-ampuQfNTOi1x+xtRIb6CZGunIo6rQXtMo2Tyu861d5GjJFIwfOXsA4lzCa4+e2rLkyXDyVpavNNUZWa3US9ELw==
+next-seo@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-5.3.0.tgz#35a8c3ebb9898fd2ac4c8208de360feed3756bf8"
+  integrity sha512-ofXUGGZ4l6j4oCxu6aecTWTkNbN/g+zbYUOvLRBKl96bJrt+WWyo4riRxQqqczvk1niGH4ibN7cCEwVjlYZs2g==
 
-next-sitemap@^2.5.10:
-  version "2.5.10"
-  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-2.5.10.tgz#6b4aa7aebb745ef3b3b17dcef859e87043c3b0af"
-  integrity sha512-9jFvViLL2US0obp6NAGlEpE4gWU5NACupHvVFtLhOhgJ33M/vBPqEgCiZQsG9dKDhZXchjrjQrtDvhk/KZBekg==
+next-sitemap@^2.5.17:
+  version "2.5.17"
+  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-2.5.17.tgz#1d1360a0ae188adb13ae8e3ea47351c4284805fd"
+  integrity sha512-L0zwaqt5WBm8FL/mraA08YbsJD+dnc2gYO1FeawBVUDvFKDXhYXQBTAT2AbkXwCnKinM94/VvBQvw3n8LC9TpA==
   dependencies:
     "@corex/deepmerge" "^2.6.148"
-    minimist "^1.2.5"
+    minimist "^1.2.6"
 
 next-themes@^0.1.1:
   version "0.1.1"
@@ -4221,10 +4221,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.6.0.tgz#12f8f504c4d8ddb76475f441337542fa799207d4"
-  integrity sha512-m2FgJibYrBGGgQXNzfd0PuDGShJgRavjUoRCw1mZERIWVSXF0iLzLm+aOqTAbLnC3n6JzUhAA8uZnFVghHJ86A==
+prettier@^2.6.2:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.6.2.tgz#e26d71a18a74c3d0f0597f55f01fb6c06c206032"
+  integrity sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==
 
 pretty-bytes@^5.3.0, pretty-bytes@^5.4.1:
   version "5.6.0"
