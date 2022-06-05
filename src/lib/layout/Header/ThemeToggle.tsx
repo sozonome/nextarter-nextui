@@ -10,7 +10,13 @@ const ThemeToggle = () => {
     setTheme(ev.target.checked ? "dark" : "light");
   };
 
-  return <Switch checked={isDark} onChange={handleChange} />;
+  return (
+    <Switch
+      css={{ marginLeft: "auto" }}
+      checked={isDark}
+      onChange={handleChange}
+    />
+  );
 };
 
 export default ThemeToggle;
