@@ -1,28 +1,21 @@
-import { Button, Grid, Image, Link } from "@nextui-org/react";
+import { Button } from '@nextui-org/button';
+import { Image } from '@nextui-org/image';
+import { Link } from '@nextui-org/link';
 
-const repoName = "nextarter-nextui";
+const repoName = 'nextarter-nextui';
 const repoLink = `https://github.com/sozonome/${repoName}`;
 
 const CTASection = () => {
   return (
-    <Grid.Container
-      gap={1}
-      alignItems="center"
-      justify="center"
-      css={{ flexDirection: "column" }}
-    >
-      <Grid css={{ display: "flex", gap: 8, marginBottom: 16 }}>
+    <div className="grid gap-1 items-center justify-center flex-col">
+      <div className="flex gap-2 mb-4">
         <Link
           aria-label="Deploy to Vercel"
           target="_blank"
           rel="noreferrer noopener"
           href={`https://vercel.com/import/git?s=${repoLink}`}
         >
-          <Image
-            showSkeleton
-            src="https://vercel.com/button"
-            alt="Vercel deploy button"
-          />
+          <Image src="https://vercel.com/button" alt="Vercel deploy button" />
         </Link>
         <Link
           aria-label="Deploy to Netlify"
@@ -31,36 +24,33 @@ const CTASection = () => {
           href={`https://app.netlify.com/start/deploy?repository=${repoLink}`}
         >
           <Image
-            showSkeleton
             src="https://www.netlify.com/img/deploy/button.svg"
             alt="Netlify deploy button"
           />
         </Link>
-      </Grid>
+      </div>
 
-      <Grid>
+      <div className="flex justify-center">
         <Button
           as="a"
           href={`${repoLink}/generate`}
           target="_blank"
           rel="noreferrer noopener"
-          color="gradient"
-          shadow
-          rounded
+          color="primary"
+          variant="shadow"
         >
           Use this Template
         </Button>
-      </Grid>
+      </div>
 
-      <Grid css={{ display: "flex", alignItems: "center", gap: 8 }}>
+      <div className="flex justify-center items-center gap-2">
         <Button
           as="a"
           href={repoLink}
           target="_blank"
           rel="noreferrer noopener"
           size="sm"
-          rounded
-          bordered
+          variant="bordered"
         >
           Open in Github
         </Button>
@@ -70,8 +60,8 @@ const CTASection = () => {
             alt="github stars"
           />
         </Link>
-      </Grid>
-    </Grid.Container>
+      </div>
+    </div>
   );
 };
 

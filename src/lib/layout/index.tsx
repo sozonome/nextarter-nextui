@@ -1,8 +1,7 @@
-import { Container } from "@nextui-org/react";
-import type * as React from "react";
+import type * as React from 'react';
 
-import Footer from "./Footer";
-import Header from "./Header";
+import Footer from './Footer';
+import Header from './Header';
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -12,9 +11,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Header />
-      <Container xs css={{ paddingTop: 32, paddingBottom: 32 }}>
-        {children}
-      </Container>
+      <div className="max-w-[650px] mx-auto p-8">{children}</div>
       <Footer />
     </>
   );

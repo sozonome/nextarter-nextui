@@ -1,19 +1,12 @@
-import { Grid } from "@nextui-org/react";
-
-import CTASection from "lib/components/samples/CTASection";
-import SomeText from "lib/components/samples/SomeText";
+import CTASection from '@/lib/components/samples/CTASection';
+import SomeText from '@/lib/components/samples/SomeText';
 
 const Home = () => {
   return (
-    <Grid.Container
-      gap={8}
-      alignItems="center"
-      justify="center"
-      css={{ minHeight: "70vh", flexDirection: "column" }}
-    >
+    <div className="grid gap-8 items-center justify-center min-h-[70vh] flex-col">
       <SomeText />
       <CTASection />
-    </Grid.Container>
+    </div>
   );
 };
 

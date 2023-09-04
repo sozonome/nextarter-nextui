@@ -1,19 +1,18 @@
-import { Container, Link } from "@nextui-org/react";
+import { Link } from '@nextui-org/link';
 
 const Footer = () => {
   return (
-    <Container
-      xs
-      as="footer"
-      css={{ paddingTop: 24, paddingBottom: 24, fontSize: "$tiny" }}
-      display="flex"
-      justify="center"
-    >
-      {new Date().getFullYear()} {" - "}
-      <Link href="https://sznm.dev" target="_blank" rel="noopener noreferrer">
+    <footer className="max-w-[650px] mx-auto px-8 py-6 text-xs flex justify-center items-center">
+      {new Date().getFullYear()} {' - '}
+      <Link
+        size="sm"
+        href="https://sznm.dev"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         sznm.dev
       </Link>
-    </Container>
+    </footer>
   );
 };
 

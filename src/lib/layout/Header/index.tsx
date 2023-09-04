@@ -1,14 +1,12 @@
-import { Container, Row } from "@nextui-org/react";
-
-import ThemeToggle from "./ThemeToggle";
+import { ThemeToggle } from './ThemeToggle';
 
 const Header = () => {
   return (
-    <Container xs css={{ paddingTop: 24, paddingBottom: 24 }}>
-      <Row>
+    <div className="max-w-[650px] mx-auto px-8 py-6">
+      <div className="flex justify-end">
         <ThemeToggle />
-      </Row>
-    </Container>
+      </div>
+    </div>
   );
 };
 

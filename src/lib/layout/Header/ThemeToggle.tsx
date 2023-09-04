@@ -1,22 +1,13 @@
-import type { SwitchEvent } from "@nextui-org/react";
-import { Switch, useTheme } from "@nextui-org/react";
-import { useTheme as useNextTheme } from "next-themes";
+'use client';
 
-const ThemeToggle = () => {
-  const { setTheme } = useNextTheme();
-  const { isDark } = useTheme();
+import '@theme-toggles/react/css/Around.css';
+import { Around } from '@theme-toggles/react';
+import { useTheme } from 'next-themes';
 
-  const handleChange = (ev: SwitchEvent) => {
-    setTheme(ev.target.checked ? "dark" : "light");
-  };
+export function ThemeToggle() {
+  const { setTheme, theme } = useTheme();
 
-  return (
-    <Switch
-      css={{ marginLeft: "auto" }}
-      checked={isDark}
-      onChange={handleChange}
-    />
-  );
-};
+  const toggle = () => setTheme(theme === 'light' ? 'dark' : 'light');
 
-export default ThemeToggle;
+  return <Around toggle={toggle} toggled={theme === 'light'} />;
+}
