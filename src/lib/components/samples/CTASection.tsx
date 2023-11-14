@@ -7,7 +7,7 @@ const repoLink = `https://github.com/sozonome/${repoName}`;
 
 const CTASection = () => {
   return (
-    <div className="grid gap-1 items-center justify-center flex-col">
+    <div className="grid gap-4 items-center justify-center flex-col">
       <div className="flex gap-2 mb-4">
         <Link
           aria-label="Deploy to Vercel"
