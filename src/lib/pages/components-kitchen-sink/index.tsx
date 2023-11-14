@@ -1,8 +1,7 @@
-import AutoComplete from '@/lib/pages/components-kitchen-sink/components/AutoComplete';
-import BadgeSection from '@/lib/pages/components-kitchen-sink/components/BadgeSection';
-
 import AccordionSection from './components/AccordionSection';
+import AutoComplete from './components/AutoComplete';
 import AvatarSection from './components/AvatarSection';
+import BadgeSection from './components/BadgeSection';
 import HeadSection from './components/HeadSection';
 
 const ComponentsKitchenSink = () => {
