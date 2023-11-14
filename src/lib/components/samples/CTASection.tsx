@@ -43,6 +43,18 @@ const CTASection = () => {
         </Button>
       </div>
 
+      <div className="flex justify-center">
+        <Button
+          as={Link}
+          href="/components-kitchen-sink"
+          rel="noreferrer noopener"
+          color="secondary"
+          variant="shadow"
+        >
+          See Components
+        </Button>
+      </div>
+
       <div className="flex justify-center items-center gap-2">
         <Button
           as="a"
