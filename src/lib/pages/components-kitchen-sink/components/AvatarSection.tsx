@@ -1,10 +1,9 @@
 import { Avatar } from '@nextui-org/react';
-import React from 'react';
 
 const AvatarSection = () => {
   return (
     <section>
-      <h3>Avatar</h3>
+      <h2>Avatar</h2>
       <div className="flex gap-3 items-center">
         <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
         <Avatar name="Junior" />

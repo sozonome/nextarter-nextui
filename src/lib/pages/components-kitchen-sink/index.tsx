@@ -1,5 +1,3 @@
-import React from 'react';
-
 import AvatarSection from './components/AvatarSection';
 import HeadSection from './components/HeadSection';
 

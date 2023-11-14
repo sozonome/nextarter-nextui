@@ -1,6 +1,4 @@
-import { Button } from '@nextui-org/button';
-import { Image } from '@nextui-org/image';
-import { Link } from '@nextui-org/link';
+import { Button, Image, Link } from '@nextui-org/react';
 
 const repoName = 'nextarter-nextui';
 const repoLink = `https://github.com/sozonome/${repoName}`;
@@ -8,7 +6,7 @@ const repoLink = `https://github.com/sozonome/${repoName}`;
 const CTASection = () => {
   return (
     <div className="grid gap-4 items-center justify-center flex-col">
-      <div className="flex gap-2 mb-4">
+      <div className="flex gap-2 mb-4 justify-center">
         <Link
           aria-label="Deploy to Vercel"
           target="_blank"
@@ -30,7 +28,7 @@ const CTASection = () => {
         </Link>
       </div>
 
-      <div className="flex justify-center">
+      <div className="flex gap-2 justify-center">
         <Button
           as="a"
           href={`${repoLink}/generate`}
@@ -41,9 +39,7 @@ const CTASection = () => {
         >
           Use this Template
         </Button>
-      </div>
 
-      <div className="flex justify-center">
         <Button
           as={Link}
           href="/components-kitchen-sink"
