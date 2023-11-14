@@ -4,7 +4,7 @@ import { LuArrowLeft } from 'react-icons/lu';
 
 const HeadSection = () => {
   return (
-    <section>
+    <section className="md:flex gap-4 prose-headings:mt-2 md:prose-headings:m-0">
       <Button
         as={Link}
         href="/"
@@ -13,7 +13,7 @@ const HeadSection = () => {
       >
         Home
       </Button>
-      <h1 className="mt-2">Components</h1>
+      <h1>Components</h1>
     </section>
   );
 };

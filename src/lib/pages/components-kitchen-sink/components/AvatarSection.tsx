@@ -2,7 +2,7 @@ import { Avatar } from '@nextui-org/react';
 
 const AvatarSection = () => {
   return (
-    <section>
+    <section className="flex flex-col gap-2">
       <h2>Avatar</h2>
       <div className="flex gap-3 items-center">
         <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
