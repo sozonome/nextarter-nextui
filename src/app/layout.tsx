@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 
 import Layout from '@/lib/layout';
 import { fontSans } from '@/lib/styles/fonts';
@@ -12,10 +12,6 @@ const APP_NAME = 'nextarter-nextui';
 export const metadata: Metadata = {
   title: APP_NAME,
   description: 'Next.js + NextUI + TypeScript template',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-  },
   applicationName: APP_NAME,
   appleWebApp: {
     capable: true,
@@ -25,7 +21,6 @@ export const metadata: Metadata = {
   formatDetection: {
     telephone: false,
   },
-  themeColor: '#FFFFFF',
   openGraph: {
     url: 'https://nextarter-nextui.sznm.dev',
     title: APP_NAME,
@@ -39,6 +34,12 @@ export const metadata: Metadata = {
     creator: '@sozonome',
     card: 'summary_large_image',
   },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#FFFFFF',
 };
 
 interface RootLayoutProps {
