@@ -1,9 +1,10 @@
 import { Avatar } from '@nextui-org/react';
 
+import SectionWrapper from '@/lib/pages/components-kitchen-sink/components/SectionWrapper';
+
 const AvatarSection = () => {
   return (
-    <section className="flex flex-col gap-2">
-      <h2>Avatar</h2>
+    <SectionWrapper title="Avatar">
       <div className="flex gap-3 items-center">
         <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
         <Avatar name="Junior" />
@@ -12,7 +13,7 @@ const AvatarSection = () => {
         <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026702d" />
         <Avatar name="Joe" />
       </div>
-    </section>
+    </SectionWrapper>
   );
 };
 

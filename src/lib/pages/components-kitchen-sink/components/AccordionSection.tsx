@@ -2,13 +2,14 @@
 
 import { Accordion, AccordionItem } from '@nextui-org/react';
 
+import SectionWrapper from '@/lib/pages/components-kitchen-sink/components/SectionWrapper';
+
 const defaultContent =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
 
 const AccordionSection = () => {
   return (
-    <section className="flex flex-col gap-2">
-      <h2>Accordion</h2>
+    <SectionWrapper title="Accordion">
       <Accordion>
         <AccordionItem key="1" aria-label="Accordion 1" title="Accordion 1">
           {defaultContent}
@@ -20,7 +21,7 @@ const AccordionSection = () => {
           {defaultContent}
         </AccordionItem>
       </Accordion>
-    </section>
+    </SectionWrapper>
   );
 };
 

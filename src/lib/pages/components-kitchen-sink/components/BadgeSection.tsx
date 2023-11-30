@@ -1,10 +1,11 @@
 import { Avatar, Badge } from '@nextui-org/react';
 import { LuBell, LuCheck } from 'react-icons/lu';
 
+import SectionWrapper from '@/lib/pages/components-kitchen-sink/components/SectionWrapper';
+
 const BadgeSection = () => {
   return (
-    <section className="flex flex-col gap-2">
-      <h2>Badge</h2>
+    <SectionWrapper title="Badge">
       <div className="flex gap-5 items-center">
         <Badge content="5" color="danger">
           <Avatar
@@ -58,7 +59,7 @@ const BadgeSection = () => {
           />
         </Badge>
       </div>
-    </section>
+    </SectionWrapper>
   );
 };
 

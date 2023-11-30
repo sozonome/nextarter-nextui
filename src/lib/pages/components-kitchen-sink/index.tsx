@@ -1,7 +1,10 @@
+import BreadcrumbsSection from '@/lib/pages/components-kitchen-sink/components/BreadcrumbsSection';
+
 import AccordionSection from './components/AccordionSection';
 import AutoComplete from './components/AutoComplete';
 import AvatarSection from './components/AvatarSection';
 import BadgeSection from './components/BadgeSection';
+import ButtonSection from './components/ButtonSection';
 import HeadSection from './components/HeadSection';
 
 const ComponentsKitchenSink = () => {
@@ -12,6 +15,8 @@ const ComponentsKitchenSink = () => {
       <AccordionSection />
       <AutoComplete />
       <BadgeSection />
+      <ButtonSection />
+      <BreadcrumbsSection />
     </div>
   );
 };
