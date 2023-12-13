@@ -1,13 +1,7 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const withPWA = require("next-pwa")({
-  dest: "public",
-  register: true,
-  disable:
-    process.env.NODE_ENV === "development" ||
-    process.env.NODE_ENV === "preview" ||
-    process.env.NODE_ENV === "production",
-  // delete two lines above to enable PWA in production deployment
-  // add your own icons to public/manifest.json
+const withPWA = require('next-pwa')({
+  dest: 'public',
+  disable: process.env.NODE_ENV === 'development',
+  // add your own icons to src/app/manifest.ts
   // to re-generate manifest.json, you can visit https://tomitm.github.io/appmanifest/
 });
 
@@ -15,6 +9,6 @@ const withPWA = require("next-pwa")({
 module.exports = withPWA({
   reactStrictMode: true,
   eslint: {
-    dirs: ["src"],
+    dirs: ['src'],
   },
 });
