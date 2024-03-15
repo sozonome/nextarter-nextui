@@ -9,5 +9,13 @@ export function ThemeToggle() {
 
   const toggle = () => setTheme(theme === 'light' ? 'dark' : 'light');
 
-  return <Around toggle={toggle} toggled={theme === 'light'} />;
+  return (
+    <Around
+      toggle={toggle}
+      toggled={theme === 'light'}
+      placeholder=""
+      onPointerEnterCapture={() => {}}
+      onPointerLeaveCapture={() => {}}
+    />
+  );
 }
